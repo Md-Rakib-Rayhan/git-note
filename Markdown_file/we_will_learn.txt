@@ -1,0 +1,20 @@
+--- Markdown ---
+1. what & why README.md?
+    -> pain text ke format/sundor kore web a dekhanor jonno ati use hoy. ati  litewate language github amra besi use kori
+    -> code er summary ba details deya thek aikhane
+
+2. How to make a comment
+3. Normal text & new line
+4. Horizontal rule
+5. Headings
+6. Paragraph
+7. italic
+8. bold
+9. strikethrough
+10. inline code block
+11. Multiple line code block
+12. List
+13. Link
+14. Image
+15. Emoji
+16. Table

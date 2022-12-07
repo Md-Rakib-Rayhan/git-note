@@ -1,0 +1,125 @@
+ctrl + L click korle clear hoy
+
+pwd -> present working directory -> to check/see current location
+cd /c -> direct drive change korar jonno
+
+dir =same= ls -> show all folder/file in that current location
+ls -a -> show hidden file also 
+
+touch name.txt -> for create file
+
+git config --global user.name Harry ->nam set/change kora jonno
+git config --global user.email youremail@example.com -> email change/set korar jonno
+uporer aitare '--global' use na korleu hoy but oitate sodho oi folder er jonno kaj korbe
+-> set korar por dekhar jonno-> git config user.name /or/ git config --list
+
+
+-***-git a 3ta state thake working-dir, stagging-area, local-repository -> aisob state per hoye github a push kora jay 
+
+git init -> initialize/ git start korte hobe & .git name hidden folder create hobe
+
+git status -> kon status a ase seita dekhabe
+aikhaen untracked file 'red' golo stagging-area te nai
+
+stagging-area
+-------------------------------
+git add filename -> spacific
+git add -A  ->sob jabe
+git add .   -> sob jabe but subdirectories jabe nah
+git add *.js  -> sob js file jabe but subdirectories er vitorer golo nah
+git add **/*js  ->dir, subdir sob jabe
+---uporer jokono --> track hobe and stagging area te cole asbe
+     ---->touch .gitignore --> file create hobe oitate je folder/file nam deya hobe git seitake ignore korbe
+	---->aifile er vitore ja dile ignore korbe
+		name.txt	-> name name je txt file ase seita ignore korbe
+		test?.txt	-> test1.txt, test2.txt ai janityo file ig korbe
+		*.txt		-> sob txt file ignore korbe
+		!main.txt	-> *.txt deyar por kono main.txt aita bade sob ig hobe
+		personalFile/	-> ai namer folder ignore hobe
+		.env		-> ai file ke ignore korbe
+
+
+git diff -> track/stagging area te neyar por file a jodi modify kora hoy
+		->tahole ki modify kora hoise tar diffarent dekhabe 
+
+modify ba abar file a kiso change korle seta abar stagging area te nite hoy
+git add (uporer commad golo) -> abar stagging area te nite pari
+git restore fileName -> modify golo bad diye ager obosthay nite pari/undo
+git checkout fileName ->same
+
+git rm --cached filename -> use kore unstage/untrack a abar fire neya jay
+git restore --staged Filename ->same
+
+
+local-repository/commiting
+-----------------------------------
+git commit -m "message here" -> staging area theke local repository te neyar jonno sathe er kono ekta massage o dite hoy
+
+git log -> to see all local-rep history
+	---> :q --> er theke ber hoyar jonno
+git log --oneline -> short kore dekhabe
+
+git show -> head/main commit er details ba ki ki kora hoise ta dekte pari
+git show commit_id -> 'id' diye specific commit er details dekha jabe
+git show HEAD~2 -> 'num' diye specific commit er details dekha jabe
+
+git add . && git commit -m "message here" -> staging and commiting in onece/directly
+git commit -am 'message here' -> staging and commiting directly ->uporer ta use kora valo
+
+->>>>>>>  Change Head/active local-repo &&& uncomming
+---------------------------
+git checkout 29b6759
+------------
+git checkout id_num_here -> je id beya hobe seitake HEAD kore
+		->and resent aitar pore ja kora hoise oita fully delete korbe nah rekhe dibe
+		->jodi abar modify kore commit o kore tarpor jodi nicer command use kore tau fire asbe but new modify golo delete hobe
+git checkout master -> abar ager jaygay ferot jabe
+
+
+
+reset is not seve cuz it delete parnamently
+-----
+git reset --soft HEAD^ -> resent,new golo uncommit / remove from local-repository
+git reset HEAD^ -> resent,new golo uncommit & untrack / stagging and local-rep theke ager obosthay nibe ba remove korbe
+		->git reset HEAD~2 -> frist 2ta HEAD~3 3ta
+git reset -hard HEAD^ ->resent, new golor uncommit & untrack sathe jodi new file create kora thake resent commit a tau delete hobe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cd    -> change directory / location
+mkdir -> make directory / folder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
