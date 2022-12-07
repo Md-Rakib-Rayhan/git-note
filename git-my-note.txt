@@ -87,7 +87,12 @@ git reset -hard HEAD^ ->resent, new golor uncommit & untrack sathe jodi new file
 
 
 
+Now connect to the github & pull push
+-----------------------------------------------
+git remote add origin github-repo-link 	-> to connect with github it will also can ask you that password to check it's really you
+						-> repo_link_like--->> https://github.com/user/repo
 
+git push -u origin master -> to push/ sent code/data to the github  -> 'master' is branches name
 
 
 
